@@ -1,9 +1,8 @@
-*,
+_*,
 *::before,
 *:after {
     padding: 0;
     margin: 0;
-    border: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: 'Montserrat', sans-serif;
@@ -212,8 +211,8 @@ main{
     color: #fff;
     background-color: #F28D11;
     text-align: center;
-    padding: 26px 80px;
-    border-radius: 50px;
+    padding: 20px 80px;
+    border-radius: 100px;
     margin-top: 15px;
 }
 /*special offer*/
@@ -264,8 +263,8 @@ b{
 /*features*/
 .column{
     text-align: center;
-    width: 350px;
-    padding: 100px 80px ;
+    max-width: 350px;
+    padding: 10% 8% ;
     display: inline-block;
     vertical-align: top;
 }
@@ -293,8 +292,8 @@ b{
 }
 .column_catalog{
     display: inline-block;
-    width: 370px;
-    height: 550px;
+    max-width: 370px;
+    max-height: 550px;
     margin: 10px;
     background-color: #FFDE62;
     text-align: center;
@@ -331,13 +330,13 @@ b{
     width: 100%;
     overflow: hidden;
 }
-.galery_strip1, .galery_strip2{
+.galery_strip{
     display: flex;
     list-style: none;
     float: left;
 
 }
-.galery_strip1 img,.galery_strip2 img{
+.galery_strip img{
     width: 300px;
     height: 100%;
     object-fit: cover;
@@ -472,7 +471,7 @@ b{
     .offer{
         width: 100%;
         height: 45%;
-        padding: 50px;
+        padding: 10%;
         justify-content: center;
     }
     .offer_2{
@@ -501,9 +500,35 @@ b{
     }
     .proposition{
         height: 400px;
+        background: url(../Img/img_proposition.png) no-repeat -340px 0px;
     }
     .proposition h1{
         font-size: 16px;
         font-weight: 500;
+    }
+    .offer{
+        display: block;
+    }
+    .offer_2{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    .offer_2 h2{
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+    .offer_2 b{
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+    .galery_strip img{
+        width: 100%;
+    }
+    .footer_table{
+        width: 100%;
+    }
+    .phone::before,.mail::before,.time::before{
+        position: relative;
     }
 }
